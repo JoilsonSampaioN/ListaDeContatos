@@ -1,0 +1,70 @@
+body{
+    background-color: aquamarine;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#lista-de-contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    
+}
+#titulo{
+    font-size: 50px;
+    color: #5770dc;
+    margin-bottom: 20px;
+}
+#contatos{
+    width: 600px;
+    background-color: white;
+    display: flex;
+    height: 400px;
+    list-style: none;
+    flex-direction: column;
+    overflow: auto;
+    border-radius: 10px;
+}
+.contato{
+    display: flex;
+    height: max-content;
+    margin-bottom: 10px;
+}
+.contato:hover{
+    background-color: grey;
+}
+.contato .foto-perfil{
+    border-radius: 80px;
+}
+.informacoes{
+    margin: 20px 20px 10px 20px;
+    flex-grow: 1;
+}
+
+.informacoes .nome{
+    color: green;
+    white-space: nowrap;
+}
+.informacoes .email{
+    color: #cecacade;
+}
+.icons{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    opacity: .3;
+    display: none;
+}
+.icons img{
+    width: 20px;
+    margin-top: 30px;
+}
+.contato:hover .icons{
+display: flex;
+}
+
+
